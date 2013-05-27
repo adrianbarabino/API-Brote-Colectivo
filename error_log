@@ -1,0 +1,1 @@
+[27-May-2013 22:23:20 UTC] PHP Warning:  passthru() has been disabled for security reasons in /home/brotecol/api/laravel/cli/tasks/test/runner.php on line 92
