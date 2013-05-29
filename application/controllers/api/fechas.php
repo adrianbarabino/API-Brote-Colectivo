@@ -6,7 +6,7 @@ class Api_Fechas_Controller extends Base_Controller {
    
 	public function get_index_bandas($id)
 	{
-			$fecha = Fecha::join('lugares', 'fechas.idlugar', '=', 'lugares.id')->where('fechas.idbanda', 'REGEXP', "[[:<:]]".$id."[[:>:]]" )->get('*');
+			$fecha = Fecha::join('lugares', 'fechas.idlugar', '=', 'lugares.id')->where('fechas.idbanda', 'REGEXP', "[[:<:]]".$id."[[:>:]]" )->get(array('fechas.*', 'lugares.coordenadas', 'lugares.url_tag', 'lugares.direccion', 'lugares.nombre', 'lugares.interior'));
         	for($i=0;$i<count($fecha);$i++){
         		$fecha[$i]->attributes['lugar'] = utf8_decode($fecha[$i]->attributes['nombre']);
         		$fecha[$i]->attributes['titulo'] = utf8_decode($fecha[$i]->attributes['titulo']);
@@ -23,7 +23,7 @@ class Api_Fechas_Controller extends Base_Controller {
 	}
  	public function get_index_nuevas() 
  	{
-			$fecha = Fecha::join('lugares', 'fechas.idlugar', '=', 'lugares.id')->where('fechas.fecha_fin', '>', date("Y-m-d H:i:s") )->get('*');
+			$fecha = Fecha::join('lugares', 'fechas.idlugar', '=', 'lugares.id')->where('fechas.fecha_fin', '>', date("Y-m-d H:i:s") )->get(array('fechas.*', 'lugares.coordenadas', 'lugares.url_tag', 'lugares.direccion', 'lugares.nombre', 'lugares.interior'));
         	for($i=0;$i<count($fecha);$i++){
         		
         		$fecha[$i]->attributes['lugar'] = utf8_decode($fecha[$i]->attributes['nombre']);
@@ -41,7 +41,7 @@ class Api_Fechas_Controller extends Base_Controller {
  	}
  	public function get_index_interior() 
  	{
-			$fecha = Fecha::join('lugares', 'fechas.idlugar', '=', 'lugares.id')->where('lugares.interior', '=', '1' )->get('*');
+			$fecha = Fecha::join('lugares', 'fechas.idlugar', '=', 'lugares.id')->where('lugares.interior', '=', '1' )->get(array('fechas.*', 'lugares.coordenadas', 'lugares.url_tag', 'lugares.direccion', 'lugares.nombre', 'lugares.interior'));
         	for($i=0;$i<count($fecha);$i++){
         		$fecha[$i]->attributes['lugar'] = utf8_decode($fecha[$i]->attributes['nombre']);
         		$fecha[$i]->attributes['titulo'] = utf8_decode($fecha[$i]->attributes['titulo']);
@@ -58,7 +58,7 @@ class Api_Fechas_Controller extends Base_Controller {
  	}
  	public function get_index_gallegos() 
  	{
-			$fecha = Fecha::join('lugares', 'fechas.idlugar', '=', 'lugares.id')->where('lugares.interior', '=', '0' )->get('*');
+			$fecha = Fecha::join('lugares', 'fechas.idlugar', '=', 'lugares.id')->where('lugares.interior', '=', '0' )->get(array('fechas.*', 'lugares.coordenadas', 'lugares.url_tag', 'lugares.direccion', 'lugares.nombre', 'lugares.interior'));
         	for($i=0;$i<count($fecha);$i++){
         		$fecha[$i]->attributes['lugar'] = utf8_decode($fecha[$i]->attributes['nombre']);
         		$fecha[$i]->attributes['titulo'] = utf8_decode($fecha[$i]->attributes['titulo']);
@@ -77,9 +77,36 @@ class Api_Fechas_Controller extends Base_Controller {
     {
         if (is_null($id )) 
         {
-        	$fecha = Fecha::join('lugares', 'fechas.idlugar', '=', 'lugares.id')->get('*');
+        	$fecha = Fecha::join('lugares', 'fechas.idlugar', '=', 'lugares.id');
+            if(Input::get('banda')){
+                $id_de_la_banda = Input::get('banda');
+                $fecha = $fecha->where('fechas.idbanda', 'REGEXP', "[[:<:]]".$id_de_la_banda."[[:>:]]" );
+            }
+            if(Input::get('order')){
+                $orden = Input::get('order');
+                if(Input::get('order2')){
+                    $orden2 = Input::get('order2');
+                    $fecha = $fecha->order_by($orden, $orden2);
+                }else{
+                    $fecha = $fecha->order_by($orden, 'desc');
+                }  
+            }
+            if(Input::get('lugar')){
+                $id_del_lugar = Input::get('lugar');
+                $fecha = $fecha->where('fechas.idlugar', '=', $id_del_lugar );
+           
+            }
+            if(Input::get('nuevas')){
+                $fecha = $fecha->where('fechas.fecha_fin', '>', date("Y-m-d H:i:s") );
+            }
+            if(Input::get('limit')){
+                $limite = Input::get('limit');
+                $fecha = $fecha->take($limite);
+
+            }
+            $fecha = $fecha->get(array('fechas.*', 'lugares.coordenadas', 'lugares.url_tag', 'lugares.direccion', 'lugares.nombre', 'lugares.interior'));
         	for($i=0;$i<count($fecha);$i++){
-        		$fecha[$i]->attributes['titulo'] = utf8_decode($fecha[$i]->attributes['titulo']);
+                $fecha[$i]->attributes['titulo'] = utf8_decode($fecha[$i]->attributes['titulo']);
         		$fecha[$i]->attributes['lugar'] = utf8_decode($fecha[$i]->attributes['nombre']);
         		$fecha[$i]->attributes['idbanda'] = json_decode($fecha[$i]->attributes['idbanda']);
 				$fecha[$i]->attributes['contenido'] = BroteColectivo::limpiar_cadena($fecha[$i]->attributes['contenido']);
@@ -89,7 +116,7 @@ class Api_Fechas_Controller extends Base_Controller {
         	}
 
         	$fecha_final = $fecha;
-            return Response::eloquent($fecha_final);
+            return Response::eloquent($fecha_final)->header("Access-Control-Allow-Origin", "*");
         } 
         else
         {
@@ -131,55 +158,55 @@ class Api_Fechas_Controller extends Base_Controller {
         }
     }
  
-    public function post_index() 
-    {
+    // public function post_index() 
+    // {
  
-        $nuevofecha = Input::json();
+    //     $nuevofecha = Input::json();
  
-        $fecha = new Fecha();
-        $fecha->titulo = $nuevofecha->titulo;
-        $fecha->idbanda = $nuevofecha->idbanda;
-        $fecha->idlugar = $nuevofecha->idlugar;
-        $fecha->tags = $nuevofecha->tags;
-        $fecha->contenido = $nuevofecha->contenido;
-        $fecha->fecha_inicio = $nuevofecha->fecha_inicio;
-        $fecha->fecha_fin = $nuevofecha->fecha_fin;
-        $fecha->save();
+    //     $fecha = new Fecha();
+    //     $fecha->titulo = $nuevofecha->titulo;
+    //     $fecha->idbanda = $nuevofecha->idbanda;
+    //     $fecha->idlugar = $nuevofecha->idlugar;
+    //     $fecha->tags = $nuevofecha->tags;
+    //     $fecha->contenido = $nuevofecha->contenido;
+    //     $fecha->fecha_inicio = $nuevofecha->fecha_inicio;
+    //     $fecha->fecha_fin = $nuevofecha->fecha_fin;
+    //     $fecha->save();
  
-        return Response::eloquent($fecha);
-    }
+    //     return Response::eloquent($fecha);
+    // }
  
-    public function put_index() 
-    {
-        $actualizarfecha = Input::json();
+    // public function put_index() 
+    // {
+    //     $actualizarfecha = Input::json();
  
-        $fecha = Fecha::find($actualizarfecha->id);
-        if(is_null($fecha)){
-            return Response::json('Fecha no encontrada', 404);
-        }
-        $fecha->titulo = $actualizarfecha->titulo;
-        $fecha->idbanda = $actualizarfecha->idbanda;
-        $fecha->idlugar = $actualizarfecha->idlugar;
-        $fecha->tags = $actualizarfecha->tags;
-        $fecha->contenido = $actualizarfecha->contenido;
-        $fecha->fecha_inicio = $actualizarfecha->fecha_inicio;
-        $fecha->fecha_fin = $actualizarfecha->fecha_fin;
-        $fecha->save();
-        return Response::eloquent($fecha);
-    }
+    //     $fecha = Fecha::find($actualizarfecha->id);
+    //     if(is_null($fecha)){
+    //         return Response::json('Fecha no encontrada', 404);
+    //     }
+    //     $fecha->titulo = $actualizarfecha->titulo;
+    //     $fecha->idbanda = $actualizarfecha->idbanda;
+    //     $fecha->idlugar = $actualizarfecha->idlugar;
+    //     $fecha->tags = $actualizarfecha->tags;
+    //     $fecha->contenido = $actualizarfecha->contenido;
+    //     $fecha->fecha_inicio = $actualizarfecha->fecha_inicio;
+    //     $fecha->fecha_fin = $actualizarfecha->fecha_fin;
+    //     $fecha->save();
+    //     return Response::eloquent($fecha);
+    // }
  
-    public function delete_index($id = null) 
-    {
-        $fecha = Fecha::find($id);
+    // public function delete_index($id = null) 
+    // {
+    //     $fecha = Fecha::find($id);
  
-        if(is_null($fecha))
-        {
-             return Response::json('Fecha no encontrada', 404);
-        }
-        $fechaeliminada = $fecha;
-        $fecha->delete();     
-        return Response::eloquent($fechaeliminada);   
-    } 
+    //     if(is_null($fecha))
+    //     {
+    //          return Response::json('Fecha no encontrada', 404);
+    //     }
+    //     $fechaeliminada = $fecha;
+    //     $fecha->delete();     
+    //     return Response::eloquent($fechaeliminada);   
+    // } 
  
 }
  
