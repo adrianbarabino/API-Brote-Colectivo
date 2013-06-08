@@ -32,6 +32,20 @@ class BroteColectivo {
 		return substr($cadena,0,-2);  
 		unset ($cadena);
 		}
+    } 
+  public static function permaLink($info, $tipo)
+    {
+
+    	if($tipo == "fechas"){
+    		$url = "http://www.brotecolectivo.com/agenda-cultural/".$info."/";
+
+    	}elseif($tipo == "canciones"){
+    		$url = "http://www.brotecolectivo.com/canciones/".$info.".mp3";
+    	}elseif($tipo == "bandas"){
+    		$url = "http://www.brotecolectivo.com/artistas/".$info."/";
+    	}
+		return $url;
+
     }
 	public static function obtenerCiudad($coordenadas)
 	{

@@ -38,6 +38,7 @@ Route::get('/', function()
 });
 Route::any('/fechas/(:num?)', array('as' => 'api.fechas', 'uses' => 'api.fechas@index'));
 Route::any('/artistas/(:num?)', array('as' => 'api.bandas', 'uses' => 'api.bandas@index'));
+Route::any('/canciones/(:num?)', array('as' => 'api.canciones', 'uses' => 'api.canciones@index'));
 Route::any('/fechas/nuevas', array('as' => 'api.fechas', 'uses' => 'api.fechas@index_nuevas'));
 Route::any('/fechas/interior', array('as' => 'api.fechas', 'uses' => 'api.fechas@index_interior'));
 Route::any('/fechas/gallegos', array('as' => 'api.fechas', 'uses' => 'api.fechas@index_gallegos'));
