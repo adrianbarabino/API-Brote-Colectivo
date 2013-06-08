@@ -11,8 +11,8 @@ La idea es que sea el servidor quien devuelve JSON y el frontend quien lo proces
 
 Hace falta que devuelva informacion de:
 
-*Canciones
-*Letras
-*Noticias
-*Lograr relacionar algunas de las anteriores para agilizar los widgets 
+* Canciones
+* Letras
+* Noticias
+* Lograr relacionar algunas de las anteriores para agilizar los widgets 
 de bandas
