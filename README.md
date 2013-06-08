@@ -11,10 +11,15 @@ La idea es que sea el servidor quien devuelve JSON y el frontend quien lo proces
 
 Hace falta que devuelva informacion de:
 
---Canciones--
- <small>- Realizado el 08/06/2013 a las 
-14:40</small>
 * Letras
 * Noticias
 * Lograr relacionar algunas de las anteriores para agilizar los widgets 
 de bandas
+
+<h2>Realizado hasta ahora</h2>
+
+Funciona actualmente con:
+
+* Canciones
+* Artistas
+* Fechas
