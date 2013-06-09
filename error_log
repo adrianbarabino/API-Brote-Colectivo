@@ -4,3 +4,16 @@
 [08-Jun-2013 17:11:43 UTC] PHP Fatal error:  Cannot redeclare static Laravel\Database\Eloquent\Model::$table as non static Cancion::$table in /home/brotecol/api/application/models/cancion.php on line 3
 [08-Jun-2013 17:11:44 UTC] PHP Fatal error:  Cannot redeclare static Laravel\Database\Eloquent\Model::$table as non static Cancion::$table in /home/brotecol/api/application/models/cancion.php on line 3
 [08-Jun-2013 17:16:21 UTC] PHP Parse error:  syntax error, unexpected T_PUBLIC in /home/brotecol/api/application/libraries/BroteColectivo.php on line 50
+[09-Jun-2013 08:50:27 UTC] PHP Fatal error:  Cannot redeclare class getid3 in /home/brotecol/api/getid3/getid3.php on line 66
+[09-Jun-2013 08:50:41 UTC] PHP Fatal error:  Class 'getID3' not found in /home/brotecol/api/application/libraries/BroteColectivo.php on line 41
+[09-Jun-2013 08:51:26 UTC] PHP Fatal error:  Cannot override final method Exception::__clone() in /home/brotecol/api/getid3/getid3.php on line 66
+[09-Jun-2013 08:51:28 UTC] PHP Fatal error:  Cannot override final method Exception::__clone() in /home/brotecol/api/getid3/getid3.php on line 66
+[09-Jun-2013 08:51:34 UTC] PHP Fatal error:  Class 'getID3' not found in /home/brotecol/api/application/libraries/BroteColectivo.php on line 40
+[09-Jun-2013 08:51:41 UTC] PHP Fatal error:  Cannot override final method Exception::__clone() in /home/brotecol/api/getid3/getid3.php on line 66
+[09-Jun-2013 21:16:31 UTC] PHP Fatal error:  Cannot redeclare class getid3 in /home/brotecol/api/getid3/getid3.php on line 66
+[09-Jun-2013 21:17:02 UTC] PHP Fatal error:  Class 'getID3' not found in /home/brotecol/api/application/libraries/BroteColectivo.php on line 40
+[09-Jun-2013 21:17:03 UTC] PHP Fatal error:  Class 'getID3' not found in /home/brotecol/api/application/libraries/BroteColectivo.php on line 40
+[09-Jun-2013 21:17:04 UTC] PHP Fatal error:  Class 'getID3' not found in /home/brotecol/api/application/libraries/BroteColectivo.php on line 40
+[09-Jun-2013 21:17:05 UTC] PHP Fatal error:  Class 'getID3' not found in /home/brotecol/api/application/libraries/BroteColectivo.php on line 40
+[09-Jun-2013 21:17:18 UTC] PHP Parse error:  syntax error, unexpected T_REQUIRE, expecting T_FUNCTION in /home/brotecol/api/application/controllers/api/canciones.php on line 6
+[09-Jun-2013 21:17:20 UTC] PHP Parse error:  syntax error, unexpected T_REQUIRE, expecting T_FUNCTION in /home/brotecol/api/application/controllers/api/canciones.php on line 6

@@ -33,6 +33,15 @@ class BroteColectivo {
 		unset ($cadena);
 		}
     } 
+
+  public static function obtenerDuracion($archivo)
+  {
+  	$ruta = "/home/brotecol/www/canciones/".$archivo.".mp3";
+  	$getID3 = new getID3;
+	$ThisFileInfo = $getID3->analyze($ruta);
+	return @$ThisFileInfo['playtime_string'];
+
+  }
   public static function permaLink($info, $tipo)
     {
 

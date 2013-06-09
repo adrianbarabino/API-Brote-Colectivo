@@ -14,7 +14,7 @@ class Api_Bandas_Controller extends Base_Controller {
 	            $banda[$i]->attributes['social'] = json_decode($banda[$i]->attributes['social']);
 	        }
 
-            return Response::eloquent($banda);
+            return Response::eloquent($banda)->header("Access-Control-Allow-Origin", "*");
         } 
         else
         {
@@ -25,7 +25,7 @@ class Api_Bandas_Controller extends Base_Controller {
             if(is_null($banda)){
                 return Response::json('Banda no encontrada', 404);
             } else {
-                    return Response::eloquent($banda);
+                    return Response::eloquent($banda)->header("Access-Control-Allow-Origin", "*");
             }
         }
     }

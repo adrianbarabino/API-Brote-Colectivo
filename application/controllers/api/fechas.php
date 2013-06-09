@@ -1,7 +1,7 @@
 <?php
  
 class Api_Fechas_Controller extends Base_Controller {
- 
+    
     public $restful = true;
    
 	public function get_index_bandas($id)
@@ -18,7 +18,7 @@ class Api_Fechas_Controller extends Base_Controller {
         	}
 
         	$fecha_final = $fecha;
-            return Response::eloquent($fecha_final);
+            return Response::eloquent($fecha_final)->header("Access-Control-Allow-Origin", "*");
 
 	}
  	public function get_index_nuevas() 
@@ -53,8 +53,7 @@ class Api_Fechas_Controller extends Base_Controller {
         	}
 
         	$fecha_final = $fecha;
-            return Response::eloquent($fecha_final);
-
+            return Response::eloquent($fecha_final)->header("Access-Control-Allow-Origin", "*");
  	}
  	public function get_index_gallegos() 
  	{
@@ -70,7 +69,7 @@ class Api_Fechas_Controller extends Base_Controller {
         	}
 
         	$fecha_final = $fecha;
-            return Response::eloquent($fecha_final);
+            return Response::eloquent($fecha_final)->header("Access-Control-Allow-Origin", "*");
 
  	}
     public function get_index($id = null) 
