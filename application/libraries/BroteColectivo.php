@@ -36,7 +36,7 @@ class BroteColectivo {
 
   public static function obtenerDuracion($archivo)
   {
-  	$ruta = "/home/brotecol/www/canciones/".$archivo.".mp3";
+  	$ruta = "/home/brotecol/www/canciones/".$archivo.".ogg";
   	$getID3 = new getID3;
 	$ThisFileInfo = $getID3->analyze($ruta);
 	return @$ThisFileInfo['playtime_string'];
@@ -49,7 +49,7 @@ class BroteColectivo {
     		$url = "http://www.brotecolectivo.com/agenda-cultural/".$info."/";
 
     	}elseif($tipo == "canciones"){
-    		$url = "http://www.brotecolectivo.com/canciones/".$info.".mp3";
+    		$url = "http://www.brotecolectivo.com/canciones/".$info.".ogg";
     	}elseif($tipo == "bandas"){
     		$url = "http://www.brotecolectivo.com/artistas/".$info."/";
     	}
