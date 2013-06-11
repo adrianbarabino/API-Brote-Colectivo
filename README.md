@@ -12,7 +12,6 @@ La idea es que sea el servidor quien devuelve JSON y el frontend quien lo proces
 Hace falta que devuelva informacion de:
 
 * Letras
-* Noticias
 * Lograr relacionar algunas de las anteriores para agilizar los widgets 
 de bandas
 
@@ -21,5 +20,6 @@ de bandas
 Funciona actualmente con:
 
 * Canciones
+* Noticias
 * Artistas
 * Fechas
