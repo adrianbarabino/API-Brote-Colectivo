@@ -17,3 +17,14 @@
 [09-Jun-2013 21:17:05 UTC] PHP Fatal error:  Class 'getID3' not found in /home/brotecol/api/application/libraries/BroteColectivo.php on line 40
 [09-Jun-2013 21:17:18 UTC] PHP Parse error:  syntax error, unexpected T_REQUIRE, expecting T_FUNCTION in /home/brotecol/api/application/controllers/api/canciones.php on line 6
 [09-Jun-2013 21:17:20 UTC] PHP Parse error:  syntax error, unexpected T_REQUIRE, expecting T_FUNCTION in /home/brotecol/api/application/controllers/api/canciones.php on line 6
+[11-Jun-2013 19:44:51 UTC] PHP Fatal error:  Class 'Noticia' not found in /home/brotecol/api/application/controllers/api/noticias.php on line 27
+[11-Jun-2013 19:45:04 UTC] PHP Fatal error:  Call to a member function get() on a non-object in /home/brotecol/api/application/controllers/api/noticias.php on line 46
+[11-Jun-2013 19:45:27 UTC] PHP Parse error:  syntax error, unexpected ';', expecting T_STRING or T_VARIABLE or '$' in /home/brotecol/api/application/controllers/api/noticias.php on line 27
+[11-Jun-2013 19:46:00 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/brotecol/api/application/controllers/api/noticias.php on line 27
+[11-Jun-2013 20:22:13 UTC] PHP Fatal error:  Call to undefined method stdClass::to_array() in /home/brotecol/api/laravel/helpers.php on line 288
+[11-Jun-2013 20:22:25 UTC] PHP Fatal error:  Call to undefined method stdClass::to_array() in /home/brotecol/api/laravel/helpers.php on line 288
+[11-Jun-2013 20:22:26 UTC] PHP Fatal error:  Call to undefined method stdClass::to_array() in /home/brotecol/api/laravel/helpers.php on line 288
+[11-Jun-2013 20:22:40 UTC] PHP Fatal error:  Call to undefined method stdClass::to_array() in /home/brotecol/api/laravel/helpers.php on line 288
+[11-Jun-2013 20:24:41 UTC] PHP Fatal error:  Access to undeclared static property: Laravel\Response::$banda in /home/brotecol/api/application/routes.php on line 44
+[11-Jun-2013 20:56:29 UTC] PHP Fatal error:  Access to undeclared static property: Laravel\Response::$banda in /home/brotecol/api/application/routes.php on line 44
+[11-Jun-2013 20:56:31 UTC] PHP Fatal error:  Access to undeclared static property: Laravel\Response::$banda in /home/brotecol/api/application/routes.php on line 44

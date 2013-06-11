@@ -32,17 +32,32 @@
 |
 */
 
+
+Route::get('(:any)/obtenerId/(:any)', function($tabla, $tag)
+{
+	$banda = DB::table($tabla)->where('urltag', '=', $tag)->get(array("id"));
+
+
+	if(is_null($banda)){
+	    return Response::json(array('Banda no encontrada', 404));
+	} else {
+	        return Response::json($banda);
+	}
+});
 Route::get('/', function()
 {
 	return View::make('home.index');
 });
 Route::any('/fechas/(:num?)', array('as' => 'api.fechas', 'uses' => 'api.fechas@index'));
+Route::any('/noticias/(:num?)', array('as' => 'api.noticias', 'uses' => 'api.noticias@index'));
 Route::any('/artistas/(:num?)', array('as' => 'api.bandas', 'uses' => 'api.bandas@index'));
 Route::any('/canciones/(:num?)', array('as' => 'api.canciones', 'uses' => 'api.canciones@index'));
 Route::any('/fechas/nuevas', array('as' => 'api.fechas', 'uses' => 'api.fechas@index_nuevas'));
 Route::any('/fechas/interior', array('as' => 'api.fechas', 'uses' => 'api.fechas@index_interior'));
 Route::any('/fechas/gallegos', array('as' => 'api.fechas', 'uses' => 'api.fechas@index_gallegos'));
 Route::any('/fechas/banda/(:num)', array('as' => 'api.fechas', 'uses' => 'api.fechas@index_bandas'));
+Route::any('/noticias/banda/(:num)', array('as' => 'api.noticias', 'uses' => 'api.noticias@index_bandas'));
+// Route::any('{tabla}/obtenerId/(tag)', array('uses' => 'api.obtenerId@index'));
 /*
 |--------------------------------------------------------------------------
 | Application 404 & 500 Error Handlers

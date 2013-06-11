@@ -83,6 +83,20 @@ class BroteColectivo {
 	    	return "Error";
 	    }
 	}
+	public static function cortar_contenido($v) {
+		if(strpos($v,'[leermas]')){
+		BroteColectivo::limpiar_cadena($v);
+		$v = substr($v, 0, strpos($v,'[leermas]'));  
+		$v = str_ireplace('[leermas]', ' ', $v);
+		}
+		return $v;
+	}
+	public static function limpiar_noticia($n) {
+		BroteColectivo::limpiar_cadena($n);
+		$n = str_ireplace('[leermas]', ' ', $n);
+		return $n;
+
+	}
 	public static function limpiar_cadena($s) {
 	    $s = str_replace('"', "'", $s);    
 	    $s = trim(preg_replace('/\s+/', ' ', $s));
