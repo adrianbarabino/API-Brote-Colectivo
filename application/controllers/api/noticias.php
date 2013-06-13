@@ -97,7 +97,7 @@ class Api_Noticias_Controller extends Base_Controller {
             			$noticia_final->attributes = get_object_vars($noticia_object);
 
 
-                    return Response::eloquent($noticia_final);
+                    return Response::eloquent($noticia_final)->header("Access-Control-Allow-Origin", "*");
             }
         }
     }

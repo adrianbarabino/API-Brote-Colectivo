@@ -152,7 +152,7 @@ class Api_Fechas_Controller extends Base_Controller {
             			$fecha_final->attributes = get_object_vars($fecha_object);
 
 
-                    return Response::eloquent($fecha_final);
+                    return Response::eloquent($fecha_final)->header("Access-Control-Allow-Origin", "*");
             }
         }
     }
