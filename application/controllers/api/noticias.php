@@ -29,7 +29,7 @@ class Api_Noticias_Controller extends Base_Controller {
     {
         if (is_null($id )) 
         {
-        	$noticia = Noticia::get(array('noticias.*'));
+        	$noticia = Noticia::skip(null);
             if(Input::get('banda')){
                 $id_de_la_banda = Input::get('banda');
                 $noticia = $noticia->where('noticias.idbanda', 'REGEXP', "[[:<:]]".$id_de_la_banda."[[:>:]]" );
@@ -38,16 +38,25 @@ class Api_Noticias_Controller extends Base_Controller {
                 $orden = Input::get('order');
                 if(Input::get('order2')){
                     $orden2 = Input::get('order2');
-                    $noticia = $noticia->order_by($orden, $orden2);
+                    $noticia = $noticia->order_by('noticias.'.$orden, $orden2);
                 }else{
                     $noticia = $noticia->order_by($orden, 'desc');
                 }  
+            }else{
+                if(Input::get('order2')){
+                    $orden2 = Input::get('order2');
+                    $noticia = $noticia->order_by('noticias.id', $orden);
+                }
+
+
             }
             if(Input::get('limit')){
                 $limite = Input::get('limit');
                 $noticia = $noticia->take($limite);
 
             }
+            $noticia = $noticia->get(array('noticias.*'));
+
         	for($i=0;$i<count($noticia);$i++){
                 $noticia[$i]->attributes['titulo'] = utf8_decode($noticia[$i]->attributes['titulo']);
         		$noticia[$i]->attributes['tags'] = utf8_decode($noticia[$i]->attributes['tags']);

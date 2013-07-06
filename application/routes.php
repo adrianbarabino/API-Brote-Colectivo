@@ -48,6 +48,7 @@ Route::get('/', function()
 {
 	return View::make('home.index');
 });
+
 Route::any('/fechas/(:num?)', array('as' => 'api.fechas', 'uses' => 'api.fechas@index'));
 Route::any('/noticias/(:num?)', array('as' => 'api.noticias', 'uses' => 'api.noticias@index'));
 Route::any('/artistas/(:num?)', array('as' => 'api.bandas', 'uses' => 'api.bandas@index'));
@@ -57,6 +58,8 @@ Route::any('/fechas/interior', array('as' => 'api.fechas', 'uses' => 'api.fechas
 Route::any('/fechas/gallegos', array('as' => 'api.fechas', 'uses' => 'api.fechas@index_gallegos'));
 Route::any('/fechas/banda/(:num)', array('as' => 'api.fechas', 'uses' => 'api.fechas@index_bandas'));
 Route::any('/noticias/banda/(:num)', array('as' => 'api.noticias', 'uses' => 'api.noticias@index_bandas'));
+
+
 // Route::any('{tabla}/obtenerId/(tag)', array('uses' => 'api.obtenerId@index'));
 /*
 |--------------------------------------------------------------------------
