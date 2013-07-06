@@ -20,7 +20,7 @@ class Api_Bandas_Controller extends Base_Controller {
             }else{
                 if(Input::get('order2')){
                     $orden2 = Input::get('order2');
-                    $banda = $banda->order_by('bandas.id', $orden);
+                    $banda = $banda->order_by('bandas.id', $orden2);
                 }
 
 
