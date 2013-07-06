@@ -45,7 +45,7 @@ class Api_Noticias_Controller extends Base_Controller {
             }else{
                 if(Input::get('order2')){
                     $orden2 = Input::get('order2');
-                    $noticia = $noticia->order_by('noticias.id', $orden);
+                    $noticia = $noticia->order_by('noticias.id', $orden2);
                 }
 
 
