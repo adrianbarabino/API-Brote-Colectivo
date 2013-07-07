@@ -41,7 +41,8 @@ Route::get('(:any)/obtenerId/(:any)', function($tabla, $tag)
 	if(is_null($banda)){
 	    return Response::json(array('Banda no encontrada', 404));
 	} else {
-	        return Response::json($banda);
+	        return 
+Response::json($banda)->header("Access-Control-Allow-Origin", "*");;
 	}
 });
 Route::get('/', function()
