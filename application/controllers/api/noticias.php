@@ -27,7 +27,7 @@ class Api_Noticias_Controller extends Base_Controller {
 
     public function get_index($id = null) 
     {
-        if (is_null($id )) 
+        if (is_null($id)) 
         {
         	$noticia = Noticia::skip(null);
             if(Input::get('banda')){
@@ -76,38 +76,27 @@ class Api_Noticias_Controller extends Base_Controller {
         } 
         else
         {
-         	$noticia = Noticia::find($id);
-		$noticia = $noticia->get(array('noticias.*'));
+         	$noticia = Noticia::where('noticias.id', '=', $id)->get(array('noticias.*'));
             if(is_null($noticia)){
                 return Response::json('Noticia no encontrado', 404);
             } else {
-            			$noticia_final = new Noticia();
-            			foreach ($noticia[0]->attributes as $key => $value)
-						{
-						    $noticia_final->$key = $value;
-						}
-						$noticia_no_object = $noticia_final->attributes;
-						$noticia_object = new stdClass();
-						foreach ($noticia_no_object as $key => $value)
-						{
-						    $noticia_object->$key = $value;
-						}
 
-        				$noticia_object->titulo = utf8_decode($noticia_object->titulo);
-            			$noticia_object->id = $noticia_object->id;
-            			$noticia_object->idbanda = json_decode($noticia_object->idbanda);
-        				$noticia_object->bandas = BroteColectivo::obtenerBandas($noticia_object->idbanda);
-            			$noticia_object->urltag = $noticia_object->urltag;
-            			$noticia_object->tags = $noticia_object->tags;
-            			$noticia_object->contenido_corto = BroteColectivo::cortar_contenido($noticia_object->contenido);
-            			$noticia_object->contenido = BroteColectivo::limpiar_noticia($noticia_object->contenido);
-            			$noticia_object->fecha = $noticia_object->fecha;
-            			$noticia_object->fecha_corta = date("d/m/Y",$noticia_object->fecha);
-            			$noticia_object->fecha_js = date('D, d M y H:i:s',$noticia_object->fecha)." -3000";
-            			$noticia_final->attributes = get_object_vars($noticia_object);
+            for($i=0;$i<count($noticia);$i++){
+                $noticia[$i]->attributes['titulo'] = utf8_decode($noticia[$i]->attributes['titulo']);
+                $noticia[$i]->attributes['tags'] = utf8_decode($noticia[$i]->attributes['tags']);
+                $noticia[$i]->attributes['idbanda'] = json_decode($noticia[$i]->attributes['idbanda']);
+                $noticia[$i]->attributes['contenido_corto'] = BroteColectivo::cortar_contenido($noticia[$i]->attributes['contenido']);
+                $noticia[$i]->attributes['contenido'] = BroteColectivo::limpiar_noticia($noticia[$i]->attributes['contenido']);
+                if(Input::get('corto')){
+                    $noticia[$i]->attributes['contenido'] = "";
+                }
+                $noticia[$i]->attributes['bandas'] = BroteColectivo::obtenerBandas($noticia[$i]->attributes['idbanda']);
+                $noticia[$i]->attributes['fecha_corta'] =  $noticia_inicio_corta = date("d/m/Y",$noticia[$i]->attributes['fecha']);
+                $noticia[$i]->attributes['fecha_js'] =  $noticia_inicio_corta = date('D, d M y H:i:s',$noticia[$i]->attributes['fecha'])." -3000";
+            }
 
-
-                    return Response::eloquent($noticia_final)->header("Access-Control-Allow-Origin", "*");
+            $noticia_final = $noticia;
+            return Response::eloquent($noticia_final)->header("Access-Control-Allow-Origin", "*");
             }
         }
     }
