@@ -76,7 +76,8 @@ class Api_Noticias_Controller extends Base_Controller {
         } 
         else
         {
-         	$noticia = Noticia::get(array('noticias.*'));
+         	$noticia = Noticia::find($id);
+		$noticia = $noticia->get(array('noticias.*'));
             if(is_null($noticia)){
                 return Response::json('Noticia no encontrado', 404);
             } else {

@@ -28,3 +28,4 @@
 [11-Jun-2013 20:24:41 UTC] PHP Fatal error:  Access to undeclared static property: Laravel\Response::$banda in /home/brotecol/api/application/routes.php on line 44
 [11-Jun-2013 20:56:29 UTC] PHP Fatal error:  Access to undeclared static property: Laravel\Response::$banda in /home/brotecol/api/application/routes.php on line 44
 [11-Jun-2013 20:56:31 UTC] PHP Fatal error:  Access to undeclared static property: Laravel\Response::$banda in /home/brotecol/api/application/routes.php on line 44
+[07-Jul-2013 04:42:32 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/brotecol/api/application/controllers/api/noticias.php on line 79
