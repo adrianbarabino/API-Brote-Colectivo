@@ -83,18 +83,64 @@ class BroteColectivo {
 	    	return "Error";
 	    }
 	}
+    public static function cerrar_tags ( $html )
+        {
+        #put all opened tags into an array
+        preg_match_all ( "#<([a-z]+)( .*)?(?!/)>#iU", $html, $result );
+        $openedtags = $result[1];
+        #put all closed tags into an array
+        preg_match_all ( "#</([a-z]+)>#iU", $html, $result );
+        $closedtags = $result[1];
+        $len_opened = count ( $openedtags );
+        # all tags are closed
+        if( count ( $closedtags ) == $len_opened )
+        {
+        return $html;
+        }
+        $openedtags = array_reverse ( $openedtags );
+        # close tags
+        for( $i = 0; $i < $len_opened; $i++ )
+        {
+            if ( !in_array ( $openedtags[$i], $closedtags ) )
+            {
+            $html .= "</" . $openedtags[$i] . ">";
+            }
+            else
+            {
+            unset ( $closedtags[array_search ( $openedtags[$i], $closedtags)] );
+            }
+        }
+        return $html;
+    }
+
 	public static function cortar_contenido($v) {
 		if(strpos($v,'[leermas]')){
-		BroteColectivo::limpiar_cadena($v);
-		$v = substr($v, 0, strpos($v,'[leermas]'));  
-		$v = str_ireplace('[leermas]', ' ', $v);
+			BroteColectivo::limpiar_cadena($v);
+			$v = substr($v, 0, strpos($v,'[leermas]'));  
+			$v = str_ireplace('[leermas]', ' ', $v);
 		}
-		return $v;
+		return BroteColectivo::cerrar_tags($v);
+
+	}
+	public static function cortar_cadena($cadena, $limite) {
+	    if(strlen($cadena) <= $limite)
+	        return $cadena;
+	    if(false !== ($breakpoint = strpos($cadena, " ", $limite))) {
+	        if($breakpoint < strlen($cadena) - 1) {
+	            $cadena = substr($cadena, 0, $breakpoint) . "...";
+	        }
+   	 	}
+	    $cadena = BroteColectivo::limpiar_cadena($cadena);
+	    $cadena = BroteColectivo::cerrar_tags($cadena);
+
+	    return $cadena;
+
 	}
 	public static function limpiar_noticia($n) {
 		BroteColectivo::limpiar_cadena($n);
 		$n = str_ireplace('[leermas]', ' ', $n);
-		return $n;
+		$final = BroteColectivo::cerrar_tags($n);
+		return $final;
 
 	}
 	public static function limpiar_cadena($s) {

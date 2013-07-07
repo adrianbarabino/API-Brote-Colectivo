@@ -32,3 +32,6 @@
 [07-Jul-2013 07:04:08 UTC] PHP Fatal error:  Cannot use object of type Noticia as array in /home/brotecol/api/application/controllers/api/noticias.php on line 86
 [07-Jul-2013 07:04:25 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/brotecol/api/application/controllers/api/noticias.php on line 79
 [07-Jul-2013 07:04:26 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/brotecol/api/application/controllers/api/noticias.php on line 79
+[07-Jul-2013 18:23:46 UTC] PHP Fatal error:  Call to undefined function cerrar_tags() in /home/brotecol/api/application/libraries/BroteColectivo.php on line 121
+[07-Jul-2013 18:23:57 UTC] PHP Fatal error:  Call to undefined function cerrar_tags() in /home/brotecol/api/application/libraries/BroteColectivo.php on line 121
+[07-Jul-2013 18:24:10 UTC] PHP Fatal error:  Call to undefined function cerrar_tags() in /home/brotecol/api/application/libraries/BroteColectivo.php on line 121
