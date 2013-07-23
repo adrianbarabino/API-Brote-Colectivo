@@ -33,17 +33,21 @@ class Api_Bandas_Controller extends Base_Controller {
             $banda = $banda->get('*');
             for($i=0;$i<count($banda);$i++){
                 $banda[$i]->attributes['bio'] = BroteColectivo::limpiar_cadena($banda[$i]->attributes['bio']);
-	            $banda[$i]->attributes['bio_corta'] = BroteColectivo::cortar_cadena($banda[$i]->attributes['bio'], 80);
-	            $banda[$i]->attributes['social'] = json_decode($banda[$i]->attributes['social']);
-	        }
+                $banda[$i]->attributes['bio_corta'] = BroteColectivo::cortar_cadena($banda[$i]->attributes['bio'], 80);
+                if(Input::get('corto')){
+                    $banda[$i]->attributes['bio'] = "";
+                }
+                $banda[$i]->attributes['social'] = json_decode($banda[$i]->attributes['social']);
+            }
 
             return Response::eloquent($banda)->header("Access-Control-Allow-Origin", "*");
         } 
         else
         {
             $banda = Banda::find($id);
-        	$banda->social = json_decode($banda->social);
-        	$banda->bio = BroteColectivo::limpiar_cadena($banda->bio);
+            $banda->social = json_decode($banda->social);
+            $banda->bio = BroteColectivo::limpiar_cadena($banda->bio);
+        	$banda->bio_corta = BroteColectivo::cortar_cadena($banda->bio, 80);
  
             if(is_null($banda)){
                 return Response::json('Banda no encontrada', 404);
