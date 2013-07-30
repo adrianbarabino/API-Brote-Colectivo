@@ -35,3 +35,6 @@
 [07-Jul-2013 18:23:46 UTC] PHP Fatal error:  Call to undefined function cerrar_tags() in /home/brotecol/api/application/libraries/BroteColectivo.php on line 121
 [07-Jul-2013 18:23:57 UTC] PHP Fatal error:  Call to undefined function cerrar_tags() in /home/brotecol/api/application/libraries/BroteColectivo.php on line 121
 [07-Jul-2013 18:24:10 UTC] PHP Fatal error:  Call to undefined function cerrar_tags() in /home/brotecol/api/application/libraries/BroteColectivo.php on line 121
+[30-Jul-2013 11:48:36 UTC] PHP Parse error:  syntax error, unexpected T_IF in /home/brotecol/api/application/controllers/api/videos.php on line 17
+[30-Jul-2013 11:48:38 UTC] PHP Parse error:  syntax error, unexpected T_IF in /home/brotecol/api/application/controllers/api/videos.php on line 17
+[30-Jul-2013 11:48:42 UTC] PHP Parse error:  syntax error, unexpected T_IF in /home/brotecol/api/application/controllers/api/videos.php on line 17

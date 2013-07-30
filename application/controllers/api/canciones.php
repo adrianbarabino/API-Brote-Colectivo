@@ -13,8 +13,14 @@ class Api_Canciones_Controller extends Base_Controller {
         if (is_null($id )) 
         {
         	$cancion = Cancion::join('generos', 'canciones.idgenero', '=', 'generos.id')->join('bandas', 'canciones.idbanda', '=', 'bandas.id')->left_join('letras', 'canciones.id', '=', 'letras.idcancion');
+ 
+            if(Input::get('banda')){
+                $id_de_la_banda = Input::get('banda');
+                $cancion = $cancion->where('canciones.idbanda', 'REGEXP', "[[:<:]]".$id_de_la_banda."[[:>:]]" );
+            }
             if(Input::get('order')){
                 $orden = Input::get('order');
+
                 if(Input::get('order2')){
                     $orden2 = Input::get('order2');
                     $cancion = $cancion->order_by('canciones.'.$orden, $orden2);

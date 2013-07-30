@@ -41,8 +41,7 @@ Route::get('(:any)/obtenerId/(:any)', function($tabla, $tag)
 	if(is_null($banda)){
 	    return Response::json(array('Banda no encontrada', 404));
 	} else {
-	        return 
-Response::json($banda)->header("Access-Control-Allow-Origin", "*");;
+	        return Response::json($banda);
 	}
 });
 Route::get('/', function()
@@ -54,6 +53,7 @@ Route::any('/fechas/(:num?)', array('as' => 'api.fechas', 'uses' => 'api.fechas@
 Route::any('/noticias/(:num?)', array('as' => 'api.noticias', 'uses' => 'api.noticias@index'));
 Route::any('/artistas/(:num?)', array('as' => 'api.bandas', 'uses' => 'api.bandas@index'));
 Route::any('/canciones/(:num?)', array('as' => 'api.canciones', 'uses' => 'api.canciones@index'));
+Route::any('/videos/(:num?)', array('as' => 'api.videos', 'uses' => 'api.videos@index'));
 Route::any('/fechas/nuevas', array('as' => 'api.fechas', 'uses' => 'api.fechas@index_nuevas'));
 Route::any('/fechas/interior', array('as' => 'api.fechas', 'uses' => 'api.fechas@index_interior'));
 Route::any('/fechas/gallegos', array('as' => 'api.fechas', 'uses' => 'api.fechas@index_gallegos'));

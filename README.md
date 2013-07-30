@@ -20,6 +20,7 @@ de bandas
 Funciona actualmente con:
 
 * Canciones
+* Videos
 * Noticias
 * Artistas
 * Fechas
