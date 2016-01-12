@@ -23,7 +23,7 @@ class Api_Canciones_Controller extends Base_Controller {
 
                 if(Input::get('order2')){
                     $orden2 = Input::get('order2');
-                    $cancion = $cancion->order_by('canciones.'.$orden, $orden2);
+                    $cancion = $cancion->order_by($orden, $orden2);
                 }else{
                     $cancion = $cancion->order_by($orden, 'desc');
                 }  

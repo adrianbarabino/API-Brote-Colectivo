@@ -38,3 +38,50 @@
 [30-Jul-2013 11:48:36 UTC] PHP Parse error:  syntax error, unexpected T_IF in /home/brotecol/api/application/controllers/api/videos.php on line 17
 [30-Jul-2013 11:48:38 UTC] PHP Parse error:  syntax error, unexpected T_IF in /home/brotecol/api/application/controllers/api/videos.php on line 17
 [30-Jul-2013 11:48:42 UTC] PHP Parse error:  syntax error, unexpected T_IF in /home/brotecol/api/application/controllers/api/videos.php on line 17
+[22-Dec-2015 20:52:54 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 20:52:55 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 20:52:56 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 20:52:57 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 20:52:58 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:00:43 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:00:43 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:00:43 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:00:43 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:00:55 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:00:55 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:00:55 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:00:55 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:00:58 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:00:58 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:00:58 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:00:58 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:02:40 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:02:40 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:02:40 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 21:02:40 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 22:28:14 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 22:28:14 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 22:28:14 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 22:28:14 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 22:28:32 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 22:28:32 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 22:28:36 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 22:28:37 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 22:37:07 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 22:37:10 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 22:37:10 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 22:37:11 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 22:37:12 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 22:40:25 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 23:20:19 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 23:20:25 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 23:20:25 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 23:20:26 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 23:20:27 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[22-Dec-2015 23:20:51 America/New_York] PHP Fatal error:  Class 'Autoloader' not found in /home/brotecol/api/application/start.php on line 61
+[23-Dec-2015 04:29:46 UTC] PHP Warning:  file_put_contents(/home/brotecol/api/storage/logs/2015-12-23.log) [<a href='function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: No such file or directory in /home/brotecol/api/laravel/file.php on line 57
+[23-Dec-2015 04:30:09 UTC] PHP Warning:  file_put_contents(/home/brotecol/api/storage/logs/2015-12-23.log) [<a href='function.file-put-contents'>function.file-put-contents</a>]: failed to open stream: No such file or directory in /home/brotecol/api/laravel/file.php on line 57
+[05-Jan-2016 00:01:36 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[09-Jan-2016 03:16:41 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[11-Jan-2016 15:25:58 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[12-Jan-2016 18:22:36 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
