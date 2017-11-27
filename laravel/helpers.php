@@ -560,9 +560,9 @@ function render_each($partial, array $data, $iterator, $empty = 'raw|')
  * @param  string  $section
  * @return string
  */
-function yield_template($section)
+function yieldContent($section)
 {
-	return Laravel\Section::yield_template($section);
+	return Laravel\Section::yieldContent($section);
 }
 
 /**

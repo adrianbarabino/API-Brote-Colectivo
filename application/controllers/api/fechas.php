@@ -107,11 +107,33 @@ class Api_Fechas_Controller extends Base_Controller {
         	for($i=0;$i<count($fecha);$i++){
                 $fecha[$i]->attributes['titulo'] = utf8_decode($fecha[$i]->attributes['titulo']);
         		$fecha[$i]->attributes['lugar'] = utf8_decode($fecha[$i]->attributes['nombre']);
-        		$fecha[$i]->attributes['idbanda'] = json_decode($fecha[$i]->attributes['idbanda']);
-				$fecha[$i]->attributes['contenido'] = BroteColectivo::limpiar_cadena($fecha[$i]->attributes['contenido']);
-				$fecha[$i]->attributes['bandas'] = BroteColectivo::obtenerBandas($fecha[$i]->attributes['idbanda']);
-				$fecha[$i]->attributes['ciudad'] = BroteColectivo::obtenerCiudad($fecha[$i]->attributes['coordenadas']);
+                $fecha[$i]->attributes['contenido_corto'] = BroteColectivo::cortar_contenido($fecha[$i]->attributes['contenido'], 60);
+                $fecha[$i]->attributes['idbanda'] = json_decode($fecha[$i]->attributes['idbanda']);
+                $fecha[$i]->attributes['bandas'] = BroteColectivo::obtenerBandas($fecha[$i]->attributes['idbanda']);
 				$fecha[$i]->attributes['fecha_corta'] =  $fecha_inicio_corta = date("d/m",strtotime($fecha[$i]->attributes['fecha_inicio']));
+                            if(!Input::get('formato_corto')){
+                $fecha[$i]->attributes['contenido'] = BroteColectivo::limpiar_cadena($fecha[$i]->attributes['contenido']);
+                $fecha[$i]->attributes['ciudad'] = BroteColectivo::obtenerCiudad($fecha[$i]->attributes['coordenadas']);
+
+                }else{
+                    unset($fecha[$i]->attributes['idbanda']);
+                    unset($fecha[$i]->attributes['coordenadas']);
+                    unset($fecha[$i]->attributes['direccion']);
+                    unset($fecha[$i]->attributes['fecha_fin']);
+                    unset($fecha[$i]->attributes['interior']);
+                    unset($fecha[$i]->attributes['tags']);
+                    unset($fecha[$i]->attributes['idlugar']);
+                    unset($fecha[$i]->attributes['url_tag']);
+                    unset($fecha[$i]->attributes['fecha_corta']);
+                    unset($fecha[$i]->attributes['contenido_corto']);
+                    unset($fecha[$i]->attributes['contenido']);
+                    $fecha[$i]->attributes['dia'] = date("d",strtotime($fecha[$i]->attributes['fecha_inicio']));
+                    $fecha[$i]->attributes['mes'] = BroteColectivo::obtenerMes(date("n",strtotime($fecha[$i]->attributes['fecha_inicio'])));
+                    $fecha[$i]->attributes['anio'] = date("Y",strtotime($fecha[$i]->attributes['fecha_inicio']));
+                    $fecha[$i]->attributes['hora'] = date("H:i",strtotime($fecha[$i]->attributes['fecha_inicio']));
+                    unset($fecha[$i]->attributes['fecha_inicio']);
+                }
+
         	}
 
         	$fecha_final = $fecha;
@@ -144,7 +166,8 @@ class Api_Fechas_Controller extends Base_Controller {
             			$fecha_object->titulo = $fecha_object->titulo;
             			$fecha_object->urltag = $fecha_object->urltag;
             			$fecha_object->tags = $fecha_object->tags;
-            			$fecha_object->contenido = BroteColectivo::limpiar_cadena($fecha_object->contenido);
+                        $fecha_object->contenido = BroteColectivo::limpiar_cadena($fecha_object->contenido);
+            			$fecha_object->contenido_corto = BroteColectivo::cortar_contenido($fecha_object->contenido,60);
             			$fecha_object->fecha_inicio = $fecha_object->fecha_inicio;
             			$fecha_inicio_corta = date("d/m",strtotime($fecha_object->fecha_inicio));
             			$fecha_object->fecha_corta = $fecha_inicio_corta;

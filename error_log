@@ -85,3 +85,221 @@
 [09-Jan-2016 03:16:41 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
 [11-Jan-2016 15:25:58 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
 [12-Jan-2016 18:22:36 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[12-Jan-2016 23:35:51 UTC] PHP Parse error:  syntax error, unexpected T_ELSE, expecting T_FUNCTION in /home/brotecol/api/application/libraries/BroteColectivo.php on line 75
+[12-Jan-2016 23:35:53 UTC] PHP Parse error:  syntax error, unexpected T_ELSE, expecting T_FUNCTION in /home/brotecol/api/application/libraries/BroteColectivo.php on line 75
+[12-Jan-2016 23:41:38 UTC] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_FUNCTION in /home/brotecol/api/application/libraries/BroteColectivo.php on line 59
+[12-Jan-2016 23:41:39 UTC] PHP Parse error:  syntax error, unexpected T_STRING, expecting T_FUNCTION in /home/brotecol/api/application/libraries/BroteColectivo.php on line 59
+[19-Jan-2016 01:31:58 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/brotecol/api/application/controllers/api/fechas.php on line 124
+[19-Jan-2016 01:32:10 UTC] PHP Parse error:  syntax error, unexpected ')', expecting ']' in /home/brotecol/api/application/controllers/api/fechas.php on line 124
+[19-Jan-2016 02:50:37 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 9
+[19-Jan-2016 02:51:04 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 27
+[19-Jan-2016 02:51:06 UTC] PHP Parse error:  syntax error, unexpected '{' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 27
+[24-Jan-2016 22:01:14 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[28-Jan-2016 20:30:31 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[08-Feb-2016 14:47:03 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[23-Feb-2016 19:30:45 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[24-Feb-2016 02:56:27 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[24-Feb-2016 08:51:00 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[24-Feb-2016 14:51:10 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[29-Feb-2016 11:44:23 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[03-Mar-2016 15:10:08 UTC] PHP Parse error:  syntax error, unexpected 'yield' (T_YIELD), expecting identifier (T_STRING) in /home/brotecol/api/laravel/section.php on line 131
+[08-Mar-2016 03:45:56 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[08-Mar-2016 11:09:02 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[08-Mar-2016 16:27:59 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[08-Mar-2016 23:01:14 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[09-Mar-2016 04:40:53 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[15-Mar-2016 01:01:22 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[19-Mar-2016 22:00:34 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[22-Mar-2016 17:33:02 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[03-Apr-2016 21:00:43 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[08-Apr-2016 13:47:20 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[12-Apr-2016 10:11:01 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[16-Apr-2016 04:18:23 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[16-Apr-2016 11:09:27 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[16-Apr-2016 17:19:39 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[16-Apr-2016 23:25:18 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[17-Apr-2016 05:09:39 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[21-Apr-2016 15:44:08 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[24-Apr-2016 22:05:35 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[26-Apr-2016 09:57:59 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[28-Apr-2016 10:52:27 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[28-Apr-2016 17:35:34 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[28-Apr-2016 18:20:21 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[28-Apr-2016 23:19:51 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[30-Apr-2016 12:28:20 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[09-May-2016 21:52:56 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[17-May-2016 18:24:34 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[21-May-2016 23:54:01 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[04-Jun-2016 16:48:37 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[05-Jun-2016 01:11:09 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[05-Jun-2016 03:16:23 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[05-Jun-2016 05:12:29 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[05-Jun-2016 13:59:17 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[05-Jun-2016 17:05:50 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[22-Jun-2016 10:11:48 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[26-Jun-2016 15:25:06 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[29-Jun-2016 17:47:00 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[10-Jul-2016 11:00:30 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[13-Jul-2016 06:31:50 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[13-Jul-2016 13:30:30 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[13-Jul-2016 16:32:28 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[13-Jul-2016 19:36:14 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[14-Jul-2016 02:02:20 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[14-Jul-2016 08:51:08 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[18-Jul-2016 13:48:31 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[21-Jul-2016 22:54:30 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[25-Jul-2016 20:21:43 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[30-Jul-2016 01:30:23 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[03-Aug-2016 08:09:22 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[14-Aug-2016 16:03:57 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[18-Aug-2016 20:41:13 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[23-Aug-2016 08:27:58 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[27-Aug-2016 05:12:57 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[28-Aug-2016 03:50:36 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[28-Aug-2016 09:10:57 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[28-Aug-2016 15:39:19 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[28-Aug-2016 21:09:22 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[29-Aug-2016 02:56:52 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[30-Aug-2016 18:45:54 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[04-Sep-2016 04:08:04 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[07-Sep-2016 14:27:29 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[04-Oct-2016 01:13:38 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[04-Oct-2016 08:49:48 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[04-Oct-2016 15:16:36 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[04-Oct-2016 21:05:16 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[09-Oct-2016 22:56:12 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[14-Oct-2016 00:19:58 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[18-Oct-2016 04:33:30 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[15-Nov-2016 23:19:15 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[16-Nov-2016 05:15:05 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[16-Nov-2016 11:59:16 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[16-Nov-2016 17:41:08 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[17-Nov-2016 01:05:59 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[18-Nov-2016 00:11:29 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[21-Nov-2016 15:08:33 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[29-Nov-2016 19:07:13 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[02-Dec-2016 08:42:02 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[11-Dec-2016 21:08:11 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[18-Dec-2016 06:36:50 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[22-Dec-2016 12:26:49 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[24-Dec-2016 05:14:24 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[24-Dec-2016 12:03:15 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[24-Dec-2016 17:50:10 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[24-Dec-2016 23:40:57 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[25-Dec-2016 05:58:19 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[02-Jan-2017 23:55:05 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[06-Jan-2017 21:59:33 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[11-Jan-2017 11:07:58 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[27-Jan-2017 17:43:10 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[29-Jan-2017 03:28:19 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[30-Jan-2017 03:15:05 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[30-Jan-2017 10:50:12 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[30-Jan-2017 14:45:30 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[30-Jan-2017 16:53:05 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[30-Jan-2017 21:28:23 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[31-Jan-2017 00:13:58 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[31-Jan-2017 02:19:33 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[11-Feb-2017 21:10:52 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[16-Feb-2017 11:51:58 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[27-Feb-2017 21:55:03 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[01-Mar-2017 17:17:40 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[03-Mar-2017 23:23:17 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[08-Mar-2017 14:01:35 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[13-Mar-2017 20:00:21 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[14-Mar-2017 19:34:25 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[16-Mar-2017 15:05:49 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[19-Mar-2017 22:26:02 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[20-Mar-2017 06:04:31 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[20-Mar-2017 14:22:18 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[20-Mar-2017 20:51:35 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[20-Mar-2017 22:00:06 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[22-Mar-2017 07:38:37 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[22-Mar-2017 21:45:40 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[23-Mar-2017 13:29:40 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[25-Mar-2017 18:22:22 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[25-Mar-2017 20:50:00 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[27-Mar-2017 00:27:41 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[29-Mar-2017 22:58:31 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[31-Mar-2017 13:32:51 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[03-Apr-2017 00:29:43 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[05-Apr-2017 05:31:04 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[08-Apr-2017 19:19:20 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[11-Apr-2017 02:34:26 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[13-Apr-2017 07:51:52 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[18-Apr-2017 23:56:18 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[20-Apr-2017 00:42:12 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[23-Apr-2017 01:54:55 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[24-Apr-2017 18:24:11 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[25-Apr-2017 15:23:39 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[25-Apr-2017 21:55:14 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[26-Apr-2017 03:46:20 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[26-Apr-2017 09:47:49 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[26-Apr-2017 15:25:40 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[26-Apr-2017 16:07:09 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[04-May-2017 19:38:49 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[12-May-2017 17:10:34 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[25-May-2017 22:26:18 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[26-May-2017 15:15:18 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[31-May-2017 08:16:03 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[03-Jun-2017 08:50:03 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[03-Jun-2017 18:39:52 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[04-Jun-2017 00:21:47 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[04-Jun-2017 06:51:07 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[04-Jun-2017 09:11:19 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[08-Jun-2017 08:03:46 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[10-Jun-2017 00:19:24 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[25-Jun-2017 18:44:53 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[14-Jul-2017 00:58:43 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[14-Jul-2017 07:39:52 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[14-Jul-2017 13:58:36 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[14-Jul-2017 20:44:11 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[15-Jul-2017 00:07:28 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[15-Jul-2017 19:05:17 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[15-Jul-2017 20:10:28 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[20-Jul-2017 07:28:31 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[24-Jul-2017 18:02:31 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[04-Aug-2017 03:44:51 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[08-Aug-2017 00:59:27 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[18-Aug-2017 11:50:08 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[19-Aug-2017 12:08:03 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[24-Aug-2017 07:52:44 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[24-Aug-2017 21:34:03 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[25-Aug-2017 11:11:38 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[27-Aug-2017 09:14:58 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[27-Aug-2017 19:12:44 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[28-Aug-2017 02:39:12 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[28-Aug-2017 09:16:30 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[28-Aug-2017 14:55:34 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[29-Aug-2017 07:22:19 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[03-Oct-2017 03:02:48 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[10-Oct-2017 02:49:13 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[10-Oct-2017 03:53:56 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[11-Oct-2017 06:17:29 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[14-Oct-2017 06:01:02 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[24-Oct-2017 20:03:17 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[25-Oct-2017 06:23:20 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[29-Oct-2017 18:08:38 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[30-Oct-2017 01:43:20 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[30-Oct-2017 02:09:07 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[30-Oct-2017 08:04:29 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[31-Oct-2017 00:27:26 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[03-Nov-2017 09:54:41 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[07-Nov-2017 09:50:48 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[07-Nov-2017 23:12:57 UTC] PHP Fatal error:  Call to undefined method Laravel\Section::yield_template() in /home/brotecol/api/laravel/view.php(386) : eval()'d code on line 26
+[27-Nov-2017 12:03:33 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:33 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:33 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:33 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:36 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:36 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:36 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:37 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:37 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:37 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:37 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:38 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:39 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:39 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:39 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:39 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56
+[27-Nov-2017 12:03:58 UTC] PHP Parse error:  syntax error, unexpected '/' in /home/brotecol/api/application/libraries/BroteColectivo.php on line 56

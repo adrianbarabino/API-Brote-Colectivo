@@ -1,6 +1,35 @@
 <?php
 
 class BroteColectivo {
+
+	public static function obtenerMes($mes)
+	{
+		if ($mes == "1") {
+			 return "Enero";
+		}elseif ($mes == "2") {
+			 return "Febrero";
+		}elseif ($mes == "3") {
+			 return "Marzo";
+		}elseif ($mes == "4") {
+			 return "Abril";
+		}elseif ($mes == "5") {
+			 return "Mayo";
+		}elseif ($mes == "6") {
+			 return "Junio";
+		}elseif ($mes == "7") {
+			 return "Julio";
+		}elseif ($mes == "8") {
+			 return "Agosto";
+		}elseif ($mes == "9") {
+			 return "Septiembre";
+		}elseif ($mes == "10") {
+			 return "Octubre";
+		}elseif ($mes == "11") {
+			 return "Noviembre";
+		}elseif ($mes == "12") {
+			 return "Diciembre";
+		}
+	}
  public static function obtenerBandas($fecha_bandas)
     {
 		$fecha_idbanda = $fecha_bandas;
@@ -24,7 +53,7 @@ class BroteColectivo {
 			// print_r($banda[0]->nombre);
 
 			    if($banda){
-		        	$cadena .= $banda->nombre. ", ";
+		        	$cadena .= "<a href='/artistas/".$banda->urltag."' class='link_brote' rel='address:/artistas/".$banda->urltag."'>".$banda->nombre. "</a>, ";
 			    }
 
 		}
@@ -65,19 +94,25 @@ class BroteColectivo {
 	    $fecha_latitud = floatval($coordenadas[0]);
 	    $fecha_longitud = floatval($coordenadas[1]);
 	    	
-	    $url = 'http://nominatim.openstreetmap.org/reverse?format=json&lat='.$fecha_latitud.'&lon='.$fecha_longitud;
-	    $archivo_web = file_get_contents($url);
-	    $archivo = json_decode(utf8_decode($archivo_web));
-	    if(isset($archivo->error)){
-	    	return "Río Gallegos";
-	    }else{
-	    	if(isset($archivo->address->city)){
-	   			return $archivo->address->city;	
-	    		
-	    	}else{
+		$archivo = file_get_contents('http://maps.googleapis.com/maps/api/geocode/json?latlng='.$fecha_latitud.','.$fecha_longitud.'&sensor=true&language=es');
+		$archivo = json_decode($archivo);
+	    if($archivo->status == "OK"){
+			$ubicacion = $archivo->results[0];
+			$ciudad = $ubicacion->address_components[2]->long_name;
+			if(isset($ciudad)){
+				if($ciudad == "Santa Cruz"){
+					return "Puerto Deseado";
+				}elseif($ciudad == "Lago Argentino"){
+					return "El Chaltén";
+				}else{
 
-	    		return "Río Gallegos";
-	    	}
+ 				return $ciudad;
+				}
+			}else{
+				return "Río Gallegos";
+			}
+	    }else{
+	    	return "Error";
 	    }
 	    }else{
 	    	return "Error";
